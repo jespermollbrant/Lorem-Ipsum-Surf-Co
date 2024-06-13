@@ -8,7 +8,7 @@
   src: url(fonts/Roboto/Roboto-Regular.ttf);
 }
 
-/*Generlla regler för alla element*/
+/*Generlla regler för alla element - G*/
 html {
   font-size: 105%;
 }
@@ -105,6 +105,8 @@ nav ul {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  list-style-type: none;
+  line-height: 2;
 }
 
 nav ul li a {
@@ -116,3 +118,24 @@ nav a:hover, nav a:focus {
   font-weight: bold;
   letter-spacing: 0.15rem;
 }
+
+/*Main*/
+section>header p {
+  font-style: italic;
+  text-align: center;
+}
+/*
+section ul { ta bort???
+  list-style-type: none;
+  list-style-position: inside;
+  line-height: 2;
+}
+*/
+/*
+video, img {
+  height: 100%;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+/*newsletter*/
