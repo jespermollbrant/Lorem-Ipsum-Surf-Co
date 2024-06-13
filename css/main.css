@@ -1,12 +1,118 @@
 @font-face {
-    font-family: 'Source Sans Pro';
-    src: url(fonts/SourceSansPro/SourceSansPro-Bold.ttf);
-  }
-  
-  @font-face {
-    font-family: Merriweather;
-    src: url(fonts/Merriweather/Merriweather-Regular.ttf);
-  }
+  font-family: 'Source Sans 3';
+  src: url(fonts/SourceSans3/SourceSans3-Bold.ttf);
+}
 
+@font-face {
+  font-family: 'Roboto';
+  src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
 
-  
+/*Generlla regler för alla element*/
+html {
+  font-size: 105%;
+}
+
+body {
+  font: 300 1rem/1.375 "Roboto", Georgia, serif;
+  color: #212931;
+}
+
+h1,
+h2,
+h3,
+nav ul,
+footer,
+table th {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+}
+
+h1 {
+  /*only title*/
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7e1919;
+
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  text-align: justify;
+  margin: 0 0 2rem 0;
+  font-size: 1rem;
+}
+
+/* Bakgrgund, färg och marginaler */
+
+main {
+  background-color: #8b9623;
+}
+
+#container {
+  background: url("../images/sun.jpg") no-repeat fixed;
+  background-size: 100% auto;
+}
+
+nav,
+footer {
+  background-color: #bb1cbb;
+}
+
+main,
+footer,
+nav,
+#container>header,
+aside {
+  margin: 0 auto;
+  max-width: 74rem;
+}
+
+/*Header*/
+
+#container>header {
+  border: 5px solid #7a2222;
+  color: #7e1919;
+}
+
+#container>header>p {
+  color: #7e1919;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.1;
+}
+
+/*Nav*/
+nav {
+  font-size: 1.2rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+nav ul {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #08546B;
+}
+
+nav a:hover, nav a:focus {
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+}
