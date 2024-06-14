@@ -47,6 +47,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 p {
@@ -66,10 +67,13 @@ main {
   background-size: 100% auto;
 }
 
-nav,
-footer {
+nav{
   background-color: #bb1cbb;
 }
+footer{
+  background-color: rgba(231, 99, 5, 0) ;
+}
+
 
 main,
 footer,
@@ -80,8 +84,11 @@ aside {
   max-width: 74rem;
 }
 
-/*Header*/
+/*lägg in grid här*/
 
+
+
+/*Header*/
 #container>header {
   border: 5px solid #7a2222;
   color: #7e1919;
@@ -104,32 +111,175 @@ nav {
 nav ul {
   text-transform: uppercase;
   display: flex;
-  align-items: center;
   list-style-type: none;
   line-height: 2;
 }
 
 nav ul li a {
   color: #08546B;
+  text-decoration: none;
 }
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
   color: #000;
   font-weight: bold;
   letter-spacing: 0.15rem;
 }
 
-/*Main*/
-section>header p {
-  font-style: italic;
+/*Main - products, classestable and story*/
+/*Products*/
+#products article:nth-child(even) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6rem 4rem auto;
+  grid-template-areas:
+    "img h2"
+    "img h3"
+    "img p";
+    margin: 4rem;
+}
+#products article:nth-child(odd) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6rem 4rem auto;
+  grid-template-areas:
+    "h2 img"
+    "h3 img"
+    "p img";
+    margin: 4rem;
+}
+#products article img{
+  grid-area: img;
+  margin: 2rem;
+}
+#products article h2{
+  grid-area: h2;
+}
+#products article h3{
+  grid-area: h3;
+}
+#products article p{
+  grid-area: p;
+}
+
+.date {
   text-align: center;
 }
 
+/*CLASSES*/
+#classes {
+
+}
+
+#classes table {
+  margin: 0 auto;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgba(220, 220, 220, 0.25);
+}
+
+/*Story*/
+#story{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "text img" ;
+  margin: 4rem;
+  
+}
+#story img{
+  grid-area: img;
+  margin: 2rem;
+}
+#story h2,
+#story h3,
+#story p {
+  grid-area: text;
+ display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+
+
 /*
+section>header p {
+  font-style: italic;
+  text-align: center;
+} */
+
+/* ?
 video, img {
   height: 100%;
   width: 100%;
   margin: 1rem 0;
 }
+/*Slut på main*/
 
-/*newsletter*/
+
+/*newsletter FORM*/
+#newsletter {}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#newsletter p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#newsletter h3 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#newsletter li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+input,
+select {
+  border: 1px solid #dfdbdb;
+  color: #212931;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #212931;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.8rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  background-color: #18bfef;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 0 2rem;
+}
+
+footer p {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/*Grid*/
