@@ -21,7 +21,7 @@ body {
 h1,
 h2,
 h3,
-nav ul,
+nav ul, 
 footer,
 table th {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -34,7 +34,7 @@ h1 {
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
-  color: #7e1919;
+  color: #222;
 
 }
 
@@ -59,26 +59,19 @@ p {
 /* Bakgrgund, färg och marginaler */
 
 main {
-  background-color: #8b9623;
+  background-color: #059bf82f;
+  border-radius: 1rem;
 }
 
 #container {
   background: url("../images/sun.jpg") no-repeat fixed;
   background-size: 100% auto;
 }
-
-nav{
-  background-color: #bb1cbb;
-}
-footer{
-  background-color: rgba(231, 99, 5, 0) ;
-}
-
+/*Footern och Nav är genomskynlig*/
 
 main,
 footer,
 nav,
-#container>header,
 aside {
   margin: 0 auto;
   max-width: 74rem;
@@ -90,12 +83,11 @@ aside {
 
 /*Header*/
 #container>header {
-  border: 5px solid #7a2222;
-  color: #7e1919;
+  border: 5px solid #222;
 }
 
 #container>header>p {
-  color: #7e1919;
+  color: #222;
   font-size: 2rem;
   text-align: center;
   line-height: 1.1;
@@ -104,8 +96,6 @@ aside {
 /*Nav*/
 nav {
   font-size: 1.2rem;
-  max-width: 72rem;
-  margin: 0 auto;
 }
 
 nav ul {
@@ -116,15 +106,15 @@ nav ul {
 }
 
 nav ul li a {
-  color: #08546B;
+  color: #222;
   text-decoration: none;
 }
 
 nav a:hover,
 nav a:focus {
-  color: #000;
-  font-weight: bold;
-  letter-spacing: 0.15rem;
+  color: #222;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
 }
 
 /*Main - products, classestable and story*/
