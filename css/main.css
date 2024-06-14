@@ -163,11 +163,22 @@ nav a:focus {
 }
 
 #classes table {
+  width: 100%;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
+#classes th{
+  padding-bottom: 0.5rem;
+}
+
+#classes td {
+  padding: 0.3rem;
+  text-align: center;
+}
+
 tbody tr:nth-of-type(odd) {
-  background-color: rgba(220, 220, 220, 0.25);
+  background-color:#059bf817;
 }
 
 /*Story*/
@@ -212,8 +223,8 @@ tbody tr:nth-of-type(odd) {
 }
 #story img{
   grid-area: img;
-  margin: 2rem auto;
-  position: sticky;
+  margin: 5rem auto;
+  position: sticky ; /*lägg marginal i sticky?*/
   top:0;
   left:0;
   align-self: start;
@@ -278,7 +289,7 @@ input[type="submit"] {
 input:focus,
 select:focus {
   outline: none;
-  background-color: #18bfef;
+  background-color: #83ccf945;
 }
 
 /*Footer*/
