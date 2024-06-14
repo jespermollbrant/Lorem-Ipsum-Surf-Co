@@ -124,13 +124,7 @@ section>header p {
   font-style: italic;
   text-align: center;
 }
-/*
-section ul { ta bort???
-  list-style-type: none;
-  list-style-position: inside;
-  line-height: 2;
-}
-*/
+
 /*
 video, img {
   height: 100%;
