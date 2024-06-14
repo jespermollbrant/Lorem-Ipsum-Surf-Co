@@ -186,25 +186,48 @@ tbody tr:nth-of-type(odd) {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "text img" ;
+    "h2-1 img" 
+    "p-1 img" 
+    "h2-2 img" 
+    "p-2 img"
+    "h2-3 img"
+    "p-3 img"
+    "h3 img"
+    "p-4 img";
   margin: 4rem;
-  
+}
+#story h2:nth-child(1) {
+  grid-area: h2-1;
+}
+#story p:nth-child(1) {
+  grid-area: p-1;
+}
+#story h2:nth-child(2) {
+  grid-area: h2-2;
+}
+#story p:nth-child(2) {
+  grid-area: p-2;
+}
+#story h2:nth-child(3) {
+  grid-area: h2-3;
+}
+#story p:nth-child(3) {
+  grid-area: p-3;
+}
+#story h3:nth-child(1) {
+  grid-area: h3;
+}
+#story p:nth-child(4) {
+  grid-area: p-4;
 }
 #story img{
   grid-area: img;
-  margin: 2rem;
+  margin: 2rem auto;
+  position: sticky;
+  top:0;
+  left:0;
+  align-self: start;
 }
-#story h2,
-#story h3,
-#story p {
-  grid-area: text;
- display: flex;
-  flex-direction: column;
-  justify-content: space-between;
- 
-}
-
-
 
 /*
 section>header p {
