@@ -8,7 +8,7 @@
   src: url(fonts/Roboto/Roboto-Regular.ttf);
 }
 
-/*Generlla regler för alla element - G*/
+/*Generlla regler för alla element */
 html {
   font-size: 105%;
 }
@@ -21,7 +21,7 @@ body {
 h1,
 h2,
 h3,
-nav ul, 
+nav ul,
 footer,
 table th {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -67,6 +67,7 @@ main {
   background: url("../images/sun.jpg") no-repeat fixed;
   background-size: 100% auto;
 }
+
 /*Footern och Nav är genomskynlig*/
 
 main,
@@ -96,6 +97,8 @@ aside {
 /*Nav*/
 nav {
   font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
@@ -114,7 +117,7 @@ nav a:hover,
 nav a:focus {
   color: #222;
   font-weight: 900;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
 }
 
 /*Main - products, classestable and story*/
@@ -127,8 +130,9 @@ nav a:focus {
     "img h2"
     "img h3"
     "img p";
-    margin: 4rem;
+  margin: 4rem;
 }
+
 #products article:nth-child(odd) {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -137,19 +141,23 @@ nav a:focus {
     "h2 img"
     "h3 img"
     "p img";
-    margin: 4rem;
+  margin: 4rem;
 }
-#products article img{
+
+#products article img {
   grid-area: img;
   margin: 2rem;
 }
-#products article h2{
+
+#products article h2 {
   grid-area: h2;
 }
-#products article h3{
+
+#products article h3 {
   grid-area: h3;
 }
-#products article p{
+
+#products article p {
   grid-area: p;
 }
 
@@ -158,9 +166,7 @@ nav a:focus {
 }
 
 /*CLASSES*/
-#classes {
-
-}
+#classes {}
 
 #classes table {
   width: 100%;
@@ -168,7 +174,7 @@ nav a:focus {
   margin: 0 auto;
 }
 
-#classes th{
+#classes th {
   padding-bottom: 0.5rem;
 }
 
@@ -178,18 +184,18 @@ nav a:focus {
 }
 
 tbody tr:nth-of-type(odd) {
-  background-color:#059bf817;
+  background-color: #059bf817;
 }
 
 /*Story*/
-#story{
+#story {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "h2-1 img" 
-    "p-1 img" 
-    "h2-2 img" 
+    "h2-1 img"
+    "p-1 img"
+    "h2-2 img"
     "p-2 img"
     "h2-3 img"
     "p-3 img"
@@ -197,37 +203,48 @@ tbody tr:nth-of-type(odd) {
     "p-4 img";
   margin: 4rem;
 }
+
 #story h2:nth-child(1) {
   grid-area: h2-1;
 }
+
 #story p:nth-child(1) {
   grid-area: p-1;
 }
+
 #story h2:nth-child(2) {
   grid-area: h2-2;
 }
+
 #story p:nth-child(2) {
   grid-area: p-2;
 }
+
 #story h2:nth-child(3) {
   grid-area: h2-3;
 }
+
 #story p:nth-child(3) {
   grid-area: p-3;
 }
+
 #story h3:nth-child(1) {
   grid-area: h3;
 }
+
 #story p:nth-child(4) {
   grid-area: p-4;
 }
-#story img{
+
+#story img {
   grid-area: img;
-  margin: 5rem auto;
-  position: sticky ; /*lägg marginal i sticky?*/
-  top:0;
-  left:0;
-  align-self: start;
+  margin: 0 auto;
+  padding-top: 5rem;
+  position: sticky;
+  /*lägg marginal i sticky?*/
+  top: 0;
+  left: 0;
+  align-self: top;
 }
 
 /*
@@ -298,7 +315,6 @@ footer {
   flex-direction: column;
   padding: 6rem 0 2rem;
 }
-
 footer p {
   font-weight: 600;
   font-size: 0.8rem;
@@ -306,4 +322,24 @@ footer p {
   margin-bottom: 0.5rem;
 }
 
-/*Grid*/
+
+
+
+/* Media Querie!!!! */
+@media(min-width: 601px) {
+  main,
+  footer,
+  nav,
+  aside {
+    margin: 0 auto;
+    max-width: 55rem;
+  }
+
+  #container>header {
+    margin: auto;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
