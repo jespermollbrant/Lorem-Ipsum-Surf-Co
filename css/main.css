@@ -322,7 +322,7 @@ footer p {
   }
 
   #container>header {
-    margin: auto;
+    margin: 0 auto;
     width: 50rem;
     display: flex;
     justify-content: center;
@@ -349,8 +349,9 @@ footer p {
     }
 
     #container>header {
+      margin: 0 auto;
       width: 100%;
-      max-width: 70rem;
+      max-width: 65rem;
     }
 
     #classes table {
