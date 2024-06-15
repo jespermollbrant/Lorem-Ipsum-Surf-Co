@@ -99,6 +99,7 @@ nav {
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
+  padding-bottom: 1rem;
 }
 
 nav ul {
@@ -130,7 +131,7 @@ nav a:focus {
     "img h2"
     "img h3"
     "img p";
-  margin: 4rem;
+    padding: 2rem;
 }
 
 #products article:nth-child(odd) {
@@ -141,7 +142,7 @@ nav a:focus {
     "h2 img"
     "h3 img"
     "p img";
-  margin: 4rem;
+    padding: 2rem;
 }
 
 #products article img {
@@ -166,8 +167,6 @@ nav a:focus {
 }
 
 /*CLASSES*/
-#classes {}
-
 #classes table {
   width: 100%;
   max-width: 60rem;
@@ -184,7 +183,10 @@ nav a:focus {
 }
 
 tbody tr:nth-of-type(odd) {
-  background-color: #059bf817;
+  background-color: #059bf844;
+}
+tbody tr:nth-of-type(even) {
+  background-color: #05bff84c;
 }
 
 /*Story*/
@@ -201,7 +203,7 @@ tbody tr:nth-of-type(odd) {
     "p-3 img"
     "h3 img"
     "p-4 img";
-  margin: 4rem;
+  padding: 2rem;
 }
 
 #story h2:nth-child(1) {
@@ -241,7 +243,6 @@ tbody tr:nth-of-type(odd) {
   margin: 0 auto;
   padding-top: 5rem;
   position: sticky;
-  /*lägg marginal i sticky?*/
   top: 0;
   left: 0;
   align-self: top;
@@ -263,7 +264,9 @@ video, img {
 
 
 /*newsletter FORM*/
-#newsletter {}
+#newsletter {
+  padding-top: 5rem;
+}
 
 form {
   display: flex;
@@ -342,4 +345,17 @@ footer p {
     justify-content: center;
     flex-direction: column;
   }
+
+#classes table{
+  max-width: 50rem;
+}
+
+/* Media Querie!!!! */
+@media(min-width: 980px) {
+
+  /*change wifht of container
+  width of table*/
+}
+
+
 }
