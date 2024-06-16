@@ -1,309 +1,323 @@
 @font-face {
-    font-family: 'Source Sans 3';
-    src: url(fonts/SourceSans3/SourceSans3-Bold.ttf);
-  }
-  
-  @font-face {
-    font-family: 'Roboto';
-    src: url(fonts/Roboto/Roboto-Regular.ttf);
-  }
-  
-  /*Generlla regler för alla element - G*/
-  html {
-    font-size: 105%;
-  }
-  
-  body {
-    font: 300 1rem/1.375 "Roboto", Georgia, serif;
-    color: #212931;
-  }
-  
-  h1,
-  h2,
-  h3,
-  nav ul, 
-  footer,
-  table th {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-weight: 900;
-    letter-spacing: 0.075em;
-  }
-  
-  h1 {
-    /*only title*/
-    font-size: 3rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: #222;
-  
-  }
-  
-  h2 {
-    font-size: 2rem;
-    line-height: 1.1;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  h3 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  
-  p {
-    text-align: justify;
-    margin: 0 0 2rem 0;
-    font-size: 1rem;
-  }
-  
-  /* Bakgrgund, färg och marginaler */
-  
-  main {
-    background-color: #059bf82f;
-    border-radius: 1rem;
-  }
-  
-  #container {
-    background: url("../images/sun.jpg") no-repeat fixed;
-    background-size: 100% auto;
-  }
-  /*Footern och Nav är genomskynlig*/
-  
-  main,
-  footer,
-  nav,
-  aside {
-    margin: 0 auto;
-    max-width: 74rem;
-  }
-  
-  /*lägg in grid här*/
-  
-  
-  
-  /*Header*/
-  #container>header {
-    border: 5px solid #222;
-  }
-  
-  #container>header>p {
-    color: #222;
-    font-size: 2rem;
-    text-align: center;
-    line-height: 1.1;
-  }
-  
-  /*Nav*/
-  nav {
-    font-size: 1.2rem;
-  }
-  
-  nav ul {
-    text-transform: uppercase;
-    display: flex;
-    list-style-type: none;
-    line-height: 2;
-  }
-  
-  nav ul li a {
-    color: #222;
-    text-decoration: none;
-  }
-  
-  nav a:hover,
-  nav a:focus {
-    color: #222;
-    font-weight: 900;
-    letter-spacing: 0.2rem;
-  }
-  
-  /*Main - products, classestable and story*/
-  /*Products*/
-  #products article:nth-child(even) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6rem 4rem auto;
-    grid-template-areas:
-      "img h2"
-      "img h3"
-      "img p";
-      margin: 4rem;
-  }
-  #products article:nth-child(odd) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6rem 4rem auto;
-    grid-template-areas:
-      "h2 img"
-      "h3 img"
-      "p img";
-      margin: 4rem;
-  }
-  #products article img{
-    grid-area: img;
-    margin: 2rem;
-  }
-  #products article h2{
-    grid-area: h2;
-  }
-  #products article h3{
-    grid-area: h3;
-  }
-  #products article p{
-    grid-area: p;
-  }
-  
-  .date {
-    text-align: center;
-  }
-  
-  /*CLASSES*/
-  #classes {
-  
-  }
-  
-  #classes table {
-    width: 100%;
-    max-width: 60rem;
-    margin: 0 auto;
-  }
-  
-  #classes th{
-    padding-bottom: 0.5rem;
-  }
-  
-  #classes td {
-    padding: 0.3rem;
-    text-align: center;
-  }
-  
-  tbody tr:nth-of-type(odd) {
-    background-color:#059bf817;
-  }
-  
-  /*Story*/
-  #story{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "h2-1 img" 
-      "p-1 img" 
-      "h2-2 img" 
-      "p-2 img"
-      "h2-3 img"
-      "p-3 img"
-      "h3 img"
-      "p-4 img";
-    margin: 4rem;
-  }
-  #story h2:nth-child(1) {
-    grid-area: h2-1;
-  }
-  #story p:nth-child(1) {
-    grid-area: p-1;
-  }
-  #story h2:nth-child(2) {
-    grid-area: h2-2;
-  }
-  #story p:nth-child(2) {
-    grid-area: p-2;
-  }
-  #story h2:nth-child(3) {
-    grid-area: h2-3;
-  }
-  #story p:nth-child(3) {
-    grid-area: p-3;
-  }
-  #story h3:nth-child(1) {
-    grid-area: h3;
-  }
-  #story p:nth-child(4) {
-    grid-area: p-4;
-  }
-  #story img{
-    grid-area: img;
-    margin: 5rem auto;
-    position: sticky ; /*lägg marginal i sticky?*/
-    top:0;
-    left:0;
-    align-self: start;
-  }
-  
-  /*
+  font-family: 'Source Sans 3';
+  src: url(fonts/SourceSans3/SourceSans3-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/*Generlla regler för alla element - G*/
+html {
+  font-size: 105%;
+}
+
+body {
+  font: 300 1rem/1.375 "Roboto", Georgia, serif;
+  color: #212931;
+}
+
+h1,
+h2,
+h3,
+nav ul,
+footer,
+table th {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+}
+
+h1 {
+  /*only title*/
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222;
+
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  margin: 0 0 2rem 0;
+  font-size: 1rem;
+}
+
+/* Bakgrgund, färg och marginaler */
+
+main {
+  background-color: #059bf82f;
+  border-radius: 1rem;
+}
+
+#container {
+  background: url("../images/sun.jpg") no-repeat fixed;
+  background-size: 100% auto;
+}
+
+/*Footern och Nav är genomskynlig*/
+
+main,
+footer,
+nav,
+aside {
+  margin: 0 auto;
+  max-width: 74rem;
+}
+
+/*lägg in grid här*/
+
+
+
+/*Header*/
+#container>header {
+  border: 5px solid #222;
+}
+
+#container>header>p {
+  color: #222;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.1;
+}
+
+/*Nav*/
+nav {
+  font-size: 1.2rem;
+}
+
+nav ul {
+  text-transform: uppercase;
+  display: flex;
+  list-style-type: none;
+  line-height: 2;
+}
+
+nav ul li a {
+  color: #222;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #222;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+}
+
+/*Main - products, classestable and story*/
+/*Products*/
+#products article:nth-child(even) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6rem 4rem auto;
+  grid-template-areas:
+    "img h2"
+    "img h3"
+    "img p";
+  margin: 4rem;
+}
+
+#products article:nth-child(odd) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6rem 4rem auto;
+  grid-template-areas:
+    "h2 img"
+    "h3 img"
+    "p img";
+  margin: 4rem;
+}
+
+#products article img {
+  grid-area: img;
+  margin: 2rem;
+}
+
+#products article h2 {
+  grid-area: h2;
+}
+
+#products article h3 {
+  grid-area: h3;
+}
+
+#products article p {
+  grid-area: p;
+}
+
+.date {
+  text-align: center;
+}
+
+/*CLASSES*/
+#classes {}
+
+#classes table {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+#classes th {
+  padding-bottom: 0.5rem;
+}
+
+#classes td {
+  padding: 0.3rem;
+  text-align: center;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: #059bf817;
+}
+
+/*Story*/
+#story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "h2-1 img"
+    "p-1 img"
+    "h2-2 img"
+    "p-2 img"
+    "h2-3 img"
+    "p-3 img"
+    "h3 img"
+    "p-4 img";
+  margin: 4rem;
+}
+
+#story h2:nth-child(1) {
+  grid-area: h2-1;
+}
+
+#story p:nth-child(1) {
+  grid-area: p-1;
+}
+
+#story h2:nth-child(2) {
+  grid-area: h2-2;
+}
+
+#story p:nth-child(2) {
+  grid-area: p-2;
+}
+
+#story h2:nth-child(3) {
+  grid-area: h2-3;
+}
+
+#story p:nth-child(3) {
+  grid-area: p-3;
+}
+
+#story h3:nth-child(1) {
+  grid-area: h3;
+}
+
+#story p:nth-child(4) {
+  grid-area: p-4;
+}
+
+#story img {
+  grid-area: img;
+  margin: 5rem auto;
+  position: sticky;
+  /*lägg marginal i sticky?*/
+  top: 0;
+  left: 0;
+  align-self: start;
+}
+
+/*
   section>header p {
     font-style: italic;
     text-align: center;
   } */
-  
-  /* ?
+
+/* ?
   video, img {
     height: 100%;
     width: 100%;
     margin: 1rem 0;
   }
   /*Slut på main*/
-  
-  
-  /*newsletter FORM*/
-  #newsletter {}
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-  }
-  
-  #newsletter p {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  #newsletter h3 {
-    text-align: left;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  
-  #newsletter li {
-    list-style-type: none;
-    margin: 1rem;
-  }
-  
-  input,
-  select {
-    border: 1px solid #dfdbdb;
-    color: #212931;
-    font-size: 1rem;
-  }
-  
-  input[type="submit"] {
-    background-color: #212931;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 0.8rem;
-  }
-  
-  input:focus,
-  select:focus {
-    outline: none;
-    background-color: #83ccf945;
-  }
-  
-  /*Footer*/
-  footer {
-    display: flex;
-    flex-direction: column;
-    padding: 6rem 0 2rem;
-  }
-  
-  footer p {
-    font-weight: 600;
-    font-size: 0.8rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-  
-  /*Grid*/
+
+
+/*newsletter FORM*/
+#newsletter {}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#newsletter p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#newsletter h3 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#newsletter li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+input,
+select {
+  border: 1px solid #dfdbdb;
+  color: #212931;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #212931;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.8rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  background-color: #83ccf945;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 0 2rem;
+}
+
+footer p {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/*Grid*/

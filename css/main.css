@@ -35,6 +35,9 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   color: #222;
+  margin-top: 0;
+  padding-top: 2rem;
+   /*här va det!!!*/
 
 }
 
@@ -73,13 +76,15 @@ footer,
 nav,
 aside {
   margin: 0 auto;
-  max-width: 74rem;
+  max-width: 74rem; /*kan ta bort*/
 }
 
 
 /*Header*/
 #container>header {
   border-bottom: 5px solid #222;
+  max-width: 74rem; /*kan ta bort*/
+  margin:0 auto;
 }
 
 #container>header>p {
@@ -92,17 +97,16 @@ aside {
 /*Nav*/
 nav {
   font-size: 1.3rem;
-  display: flex;
-  justify-content: center;
   padding-bottom: 1rem;
 }
 
 nav ul {
   text-transform: uppercase;
   display: flex;
+  justify-content: space-between;
   list-style-type: none;
   line-height: 2;
-  padding: 0 1rem 0;
+  /*width: 70rem;*/
 }
 
 nav ul li a {
@@ -114,10 +118,16 @@ nav a:hover,
 nav a:focus {
   color: #222;
   font-weight: 900;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
 }
 
 /*Main - products, classes and story*/
+img {
+  width: 90%;
+  height: auto;
+  justify-self: center;
+}
+
 /*Products*/
 #products article:nth-child(even) {
   display: grid;
@@ -143,7 +153,7 @@ nav a:focus {
 
 #products article img {
   grid-area: img;
-  margin: 2rem;
+  align-self: center;
 }
 
 #products article h2 {
@@ -238,7 +248,6 @@ tbody tr:nth-of-type(even) {
 
 #story img {
   grid-area: img;
-  margin: 0 auto;
   padding-top: 5rem;
   position: sticky;
   top: 0;
@@ -310,28 +319,27 @@ footer p {
 }
 
 
-/* Media Querie!!! */
-@media (max-width: 979px) {
+/*Media Querie!!! */
+@media (min-width:639px) and (max-width: 979px) {
 
   main,
   footer,
-  nav,
   aside {
     margin: 0 auto;
     max-width: 55rem;
   }
 
-  #container>header {
+  #container>header,  nav {
     margin: 0 auto;
-    width: 50rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    max-width: 50rem;
   }
 
   #classes table {
     max-width: 50rem;
   }
+
+  
+
 
   /* Media Querie!!!! */
   @media(min-width: 980px) {
@@ -342,20 +350,18 @@ footer p {
 
     main,
     footer,
-    nav,
     aside {
       margin: 0 auto;
       max-width: 70rem;
     }
 
-    #container>header {
+    #container>header, nav{
       margin: 0 auto;
-      width: 100%;
       max-width: 65rem;
     }
 
     #classes table {
-      max-width: 60rem;
+      max-width: 65rem;
     }
 
     #newsletter p {
