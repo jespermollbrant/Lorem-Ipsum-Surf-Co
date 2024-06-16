@@ -239,7 +239,6 @@ tbody tr:nth-of-type(even) {
   position: sticky;
   top: 0;
   left: 0;
-  align-self: top;
 }
 
 /*Newsletter FORM*/
@@ -310,7 +309,7 @@ footer p {
 @media (min-width:639px) and (max-width: 979px) {
 
   h1 {
-    font-size: 2.5;
+    font-size: 2.5rem;
   }
 
   h2 {
