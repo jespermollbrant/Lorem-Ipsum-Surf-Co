@@ -36,9 +36,7 @@ h1 {
   text-transform: uppercase;
   color: #222;
   margin-top: 0;
-  padding-top: 2rem;
-   /*här va det!!!*/
-
+  padding: 2rem 1rem 0;
 }
 
 h2 {
@@ -71,20 +69,9 @@ main {
   background-size: 100% auto;
 }
 
-main,
-footer,
-nav,
-aside {
-  margin: 0 auto;
-  max-width: 74rem; /*kan ta bort*/
-}
-
-
 /*Header*/
 #container>header {
   border-bottom: 5px solid #222;
-  max-width: 74rem; /*kan ta bort*/
-  margin:0 auto;
 }
 
 #container>header>p {
@@ -106,7 +93,7 @@ nav ul {
   justify-content: space-between;
   list-style-type: none;
   line-height: 2;
-  /*width: 70rem;*/
+  padding-right: 40px;
 }
 
 nav ul li a {
@@ -319,8 +306,16 @@ footer p {
 }
 
 
-/*Media Querie!!! */
+/*Media Query */
 @media (min-width:639px) and (max-width: 979px) {
+
+  h1 {
+    font-size: 2.5;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
 
   main,
   footer,
@@ -329,7 +324,8 @@ footer p {
     max-width: 55rem;
   }
 
-  #container>header,  nav {
+  #container>header,
+  nav {
     margin: 0 auto;
     max-width: 50rem;
   }
@@ -338,12 +334,8 @@ footer p {
     max-width: 50rem;
   }
 
-  
-
-
-  /* Media Querie!!!! */
-  @media(min-width: 980px) {
-
+  /* Media Query */
+  @media(min-width: 980px) and (max-width: 1280px) {
     body {
       font-size: 1.3rem;
     }
@@ -352,16 +344,15 @@ footer p {
     footer,
     aside {
       margin: 0 auto;
-      max-width: 70rem;
     }
 
-    #container>header, nav{
+    #container>header,
+    nav {
       margin: 0 auto;
-      max-width: 65rem;
     }
 
     #classes table {
-      max-width: 65rem;
+      max-width: 55rem;
     }
 
     #newsletter p {
