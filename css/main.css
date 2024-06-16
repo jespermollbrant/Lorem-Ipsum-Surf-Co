@@ -320,65 +320,64 @@ footer p {
   footer,
   aside {
     margin: 0 auto;
-    max-width: 55rem;
+    max-width: 50rem;
   }
 
   #container>header,
   nav {
     margin: 0 auto;
-    max-width: 50rem;
+    max-width: 40rem;
   }
 
   #classes table {
-    max-width: 50rem;
+    max-width: 40rem;
+  }
+}
+
+/* Media Query */
+@media(min-width: 980px) and (max-width: 1280px) {
+  body {
+    font-size: 1.3rem;
   }
 
-  /* Media Query */
-  @media(min-width: 980px) and (max-width: 1280px) {
-    body {
-      font-size: 1.3rem;
-    }
-
-    main,
-    footer,
-    aside {
-      margin: 0 auto;
-    }
-
-    #container>header,
-    nav {
-      margin: 0 auto;
-    }
-
-    #classes table {
-      max-width: 55rem;
-    }
-
-    #newsletter p {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    #newsletter h3 {
-      text-align: left;
-      font-weight: 600;
-      font-size: 1.5rem;
-    }
-
-    #newsletter li {
-      list-style-type: none;
-      margin: 1.5rem;
-    }
-
-    input,
-    select {
-      border: 1px solid #dfdbdb;
-      color: #212931;
-      font-size: 1.5rem;
-    }
+  main,
+  footer,
+  aside {
+    margin: 0 auto;
+    max-width: 65rem;
   }
 
+  #container>header,
+  nav {
+    margin: 0 auto;
+    max-width: 55rem;
+  }
 
+  #classes table {
+    max-width: 55rem;
+  }
 
+  #newsletter p {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #newsletter h3 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  #newsletter li {
+    list-style-type: none;
+    margin: 1.5rem;
+  }
+
+  input,
+  select {
+    border: 1px solid #dfdbdb;
+    color: #212931;
+    font-size: 1.5rem;
+  }
 }
